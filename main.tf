@@ -18,17 +18,16 @@ terraform {
     }
     azurecaf = {
       source  = "aztfmod/azurecaf"
-      #version = "~> 1.2.0"
+      version = "~> 1.2.0"
     }
     null = {
       source = "hashicorp/null"
     }
     random = {
-      version = "~> 3.3.1"
-      source  = "hashicorp/random"
+      source = "hashicorp/random"
     }
   }
-  required_version = ">= 1.1.0"
+  required_version = ">= 0.15"
 }
 
 

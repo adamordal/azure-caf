@@ -9,6 +9,7 @@ resource "azurecaf_name" "pva" {
 }
 
 resource "azurerm_purview_account" "pva" {
+  identity = {}
   location                    = var.location
   name                        = azurecaf_name.pva.result
   resource_group_name         = var.resource_group_name
